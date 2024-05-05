@@ -37,10 +37,7 @@ text-decoration: none;
     min-height: 680px;
     background-position: center;
 }
-.jumbotron video{
-    height: 110vh;
-    width: 100%;
-}
+
 .presentacion{
     text-align: center;
     padding-top: 20vh;
@@ -108,4 +105,19 @@ div p{
 }
 .btn-outline-light{
     border: 0;
+}
+
+@media (max-width:767px) {
+    .card-title{
+        display: flex;
+        justify-content:center;
+    }
+    .card-text{
+        display: flex;
+        justify-content:center;
+    }
+    .col-md-4{
+        display: flex;
+        justify-content:center;
+    }
 }
