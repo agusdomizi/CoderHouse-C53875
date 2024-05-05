@@ -71,6 +71,18 @@ label{
     border-radius: 0%;
     margin-top: 20px;
 }
+.muestra{
+    background: rgb(74,28,28);
+    background: radial-gradient(circle, rgba(74,28,28,1) 0%, rgba(15,15,15,1) 58%, rgba(0,0,0,1) 100%);
+    padding-bottom: 25%;
+}
+.card{
+    background-color: #00000093;
+    border-radius: 0%;
+    color: #fff;
+    max-width: 540px;
+    
+}
 
 div h1{
     text-shadow: 0 0 5px black;
@@ -78,14 +90,12 @@ div h1{
 }
 div p{
     font-size: 20px;
-    text-shadow: 0 0 5px black;
 }
 .video{
     min-width: 100%;
     min-height: 100%;
     position:fixed;
     z-index: -2;
-    
 }
 .d-block{
     max-height: 85vh;
