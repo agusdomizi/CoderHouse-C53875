@@ -122,6 +122,9 @@ div p{
 .btn-outline-light{
     border: 0;
 }
+.fa-location-dot{
+    font-size: 30px;
+}
 
 @media (max-width:767px) {
     .card-title{
