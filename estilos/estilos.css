@@ -11,10 +11,17 @@ body{
 .nav-link:hover{
 color: #fff;
 }
+
+a{color: #fff;
+text-decoration: none;
+}
 a:hover{
     text-shadow: 0 0 10px #fff;
 }
-
+a:visited{
+    color: #fff;
+text-decoration: none;
+}
 .alert{
     padding: 5px;
 }
@@ -28,14 +35,49 @@ a:hover{
 }
 .jumbotron{
     min-height: 680px;
+    background-position: center;
 }
+.jumbotron video{
+    height: 110vh;
+}
+.presentacion{
+    text-align: center;
+    padding-top: 20vh;
+}
+.jumbotronImg{
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1200px;
+}
+.fondo1{
+    background-image: url(../assets/images/Party1.jpg);
+}
+.fondo2{
+    background-image: url(../assets/images/Party2.jpg);
+}
+
+.formulario{
+    padding-top: 10vh;
+    padding-left: 20%;
+}
+.form-floating{
+    max-width: 50vw;
+}
+label{
+    color: gray;
+}
+.jumbotronImg button{
+    border-radius: 0%;
+    margin-top: 20px;
+}
+
 div h1{
-    translate: 0% 100%;
     text-shadow: 0 0 5px black;
+    margin-bottom: 30px;
 }
 div p{
     font-size: 20px;
-    translate: 0% 100%;
     text-shadow: 0 0 5px black;
 }
 .video{
