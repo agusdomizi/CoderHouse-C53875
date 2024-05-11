@@ -3,7 +3,6 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: rgb(74, 28, 28);
   background: radial-gradient(circle, rgb(74, 28, 28) 0%, rgb(15, 15, 15) 58%, rgb(0, 0, 0) 100%);
 }
 
@@ -63,6 +62,7 @@ h2 {
 .presentacion {
   text-align: center;
   padding-top: 20vh;
+  text-shadow: 0px 0px 10px black;
 }
 
 .img-fluid {
@@ -144,6 +144,10 @@ div p {
 
 .fa-brands {
   font-size: 2em;
+}
+
+.btn {
+  transition: 0.5s;
 }
 
 .btn-outline-light {

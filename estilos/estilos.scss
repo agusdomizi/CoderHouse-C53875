@@ -4,19 +4,21 @@ $color3: black;
 $colorLabel: gray;
 $imagen1: url(../assets/images/Party1.jpg);
 $imagen2: url(../assets/images/Party2.jpg);
+$fuente1:"Outfit", sans-serif;
+$degradado1:radial-gradient(
+  circle,
+  rgba(74, 28, 28, 1) 0%,
+  rgba(15, 15, 15, 1) 58%,
+  rgba(0, 0, 0, 1) 100%
+);
+
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: $fuente1;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  background: rgb(74, 28, 28);
-  background: radial-gradient(
-    circle,
-    rgba(74, 28, 28, 1) 0%,
-    rgba(15, 15, 15, 1) 58%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: $degradado1;
 }
 
 .logo {
@@ -80,6 +82,8 @@ h2 {
 .presentacion {
   text-align: center;
   padding-top: 20vh;
+  text-shadow: 0px 0px 10px $color3;
+  
 }
 .img-fluid {
   height: auto;
@@ -169,7 +173,9 @@ div {
 .fa-brands {
   font-size: 2em;
 }
-
+.btn{
+  transition: 0.5s;
+}
 .btn-outline-light {
   border: 0;
 }
