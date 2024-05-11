@@ -3,6 +3,8 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background: rgb(74,28,28);
+    background: radial-gradient(circle, rgba(74,28,28,1) 0%, rgba(15,15,15,1) 58%, rgba(0,0,0,1) 100%);
 }
 .logo{
     font-size: 4em;
@@ -51,6 +53,9 @@ text-decoration: none;
     padding-right: 30px;
     border-radius: 0;
     border: 0;
+}
+.fade{
+    transition: 0.2s;
 }
 h2{
     font-size: 20px;
@@ -109,8 +114,6 @@ label{
     margin-top: 5vh;
 }
 .muestra{
-    background: rgb(74,28,28);
-    background: radial-gradient(circle, rgba(74,28,28,1) 0%, rgba(15,15,15,1) 58%, rgba(0,0,0,1) 100%);
     padding-bottom: 25%;
 }
 .card{
