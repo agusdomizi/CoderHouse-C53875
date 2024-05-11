@@ -1,37 +1,52 @@
+$color1: red;
+$color2: white;
+$color3: black;
+$colorLabel: gray;
+$imagen1: url(../assets/images/Party1.jpg);
+$imagen2: url(../assets/images/Party2.jpg);
+
 body {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   background: rgb(74, 28, 28);
-  background: radial-gradient(circle, rgb(74, 28, 28) 0%, rgb(15, 15, 15) 58%, rgb(0, 0, 0) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(74, 28, 28, 1) 0%,
+    rgba(15, 15, 15, 1) 58%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .logo {
   font-size: 4em;
   padding-left: 20px;
-}
-.logo:hover {
-  animation-name: logoAnim;
-  animation-iteration-count: infinite;
-  animation-duration: 2.5s;
+
+  &:hover {
+    animation-name: logoAnim;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+  }
 }
 
-.nav-link:hover {
-  color: white;
+.nav-link {
+  &:hover {
+    color: $color2;
+  }
 }
 
 a {
-  color: white;
+  color: $color2;
   text-decoration: none;
 }
 
 a:hover {
-  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 10px $color2;
 }
 
 a:visited {
-  color: white;
+  color: $color2;
   text-decoration: none;
 }
 
@@ -40,16 +55,18 @@ a:visited {
 }
 
 .alert-danger {
-  background-color: red;
-  color: white;
+  background-color: $color1;
+  color: $color2;
   margin: 0;
   padding-right: 30px;
   border-radius: 0;
   border: 0;
 }
 
-.btn-close:focus {
-  box-shadow: 0px 0px 5px black;
+.btn-close {
+  &:focus {
+    box-shadow: 0px 0px 5px $color3;
+  }
 }
 
 .fade {
@@ -63,13 +80,15 @@ h2 {
 .jumbotron {
   min-height: 680px;
   background-position: center;
-}
-.jumbotron h1 {
-  font-size: 80px;
-}
-.jumbotron p {
-  font-size: 40px;
-  text-shadow: 0 0 5px black;
+
+  & h1 {
+    font-size: 80px;
+  }
+
+  & p {
+    font-size: 40px;
+    text-shadow: 0 0 5px $color3;
+  }
 }
 
 .presentacion {
@@ -90,11 +109,11 @@ h2 {
 }
 
 .fondo1 {
-  background-image: url(../assets/images/Party1.jpg);
+  background-image: $imagen1;
 }
 
 .fondo2 {
-  background-image: url(../assets/images/Party2.jpg);
+  background-image: $imagen2;
 }
 
 .formulario {
@@ -106,24 +125,28 @@ h2 {
   max-width: 50vw;
 }
 
-.form-control:focus {
-  border-color: red;
-  box-shadow: inset 0px 0px 7px red;
+.form-control {
+  &:focus {
+    border-color: $color1;
+    box-shadow: inset 0px 0px 7px $color1;
+  }
 }
 
 label {
   margin-left: 10px;
-  color: gray;
+  color: $colorLabel;
 }
 
-.jumbotronImg button {
-  background-color: red;
-  border-radius: 0%;
-  margin-top: 20px;
+.jumbotronImg {
+  & button {
+    background-color: $color1;
+    border-radius: 0%;
+    margin-top: 20px;
+  }
 }
 
 .mapa {
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px $color3;
   margin-top: 5vh;
 }
 
@@ -132,22 +155,26 @@ label {
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.5764705882);
+  background-color: #00000093;
   border-radius: 0%;
-  color: white;
+  color: $color2;
   max-width: 540px;
   transition: 0.5s;
-}
-.card:hover {
-  transform: scale(1.1);
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-div h1 {
-  text-shadow: 0 0 5px black;
-  margin-bottom: 30px;
-}
-div p {
-  font-size: 20px;
+div {
+  & h1 {
+    text-shadow: 0 0 5px $color3;
+    margin-bottom: 30px;
+  }
+
+  & p {
+    font-size: 20px;
+  }
 }
 
 .video {
@@ -177,37 +204,43 @@ div p {
   25% {
     rotate: 10deg;
   }
+
   75% {
     rotate: -10deg;
   }
+
   100% {
     rotate: 0deg;
   }
 }
+
 @media (max-width: 767px) {
   .video {
     height: 100vh;
     top: 0px;
   }
+
   .p-4 {
     padding: 5px !important;
   }
+
   .card-title {
     display: flex;
     justify-content: center;
   }
+
   .card-text {
     display: flex;
     justify-content: center;
   }
+
   .col-md-4 {
     display: flex;
     justify-content: center;
   }
+
   iframe {
     width: 200px;
     height: 100px;
   }
 }
-
-/*# sourceMappingURL=estilos.css.map */
