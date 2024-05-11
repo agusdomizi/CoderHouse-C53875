@@ -43,8 +43,8 @@ a:visited {
   background-color: red;
   color: white;
   margin: 0;
-  padding-right: 30px;
   border-radius: 0;
+  padding-right: 30px;
   border: 0;
 }
 
@@ -57,7 +57,7 @@ a:visited {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .presentacion {
@@ -72,6 +72,7 @@ h2 {
 
 .fondo1 {
   background-image: url(../assets/images/Party1.jpg);
+  height: 1200px;
 }
 
 .fondo2 {
@@ -81,6 +82,12 @@ h2 {
 .formulario {
   padding-top: 10vh;
   padding-left: 20%;
+}
+
+.formulario2 {
+  padding-top: 10vh;
+  padding-left: 20%;
+  text-shadow: 0px 0px 10px black;
 }
 
 .form-floating {
@@ -118,7 +125,6 @@ label {
 }
 
 div h1 {
-  text-shadow: 0 0 5px black;
   margin-bottom: 30px;
 }
 div p {
@@ -164,7 +170,6 @@ div p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 1200px;
 }
 .jumbotronImg button {
   background-color: red;
@@ -188,6 +193,12 @@ div p {
     height: 100vh;
     top: 0px;
   }
+  .fondo2 {
+    height: 800px;
+  }
+  .formulario2 {
+    padding-left: 0px;
+  }
   .p-4 {
     padding: 5px !important;
   }
@@ -204,7 +215,7 @@ div p {
     justify-content: center;
   }
   iframe {
-    width: 200px;
+    width: 275px;
     height: 100px;
   }
 }
