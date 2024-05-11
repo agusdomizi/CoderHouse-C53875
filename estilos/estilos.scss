@@ -77,32 +77,11 @@ h2 {
   font-size: 20px;
 }
 
-.jumbotron {
-  min-height: 680px;
-  background-position: center;
-
-  & h1 {
-    font-size: 80px;
-  }
-
-  & p {
-    font-size: 40px;
-    text-shadow: 0 0 5px $color3;
-  }
-}
 
 .presentacion {
   text-align: center;
   padding-top: 20vh;
 }
-
-.jumbotronImg {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 1200px;
-}
-
 .img-fluid {
   height: auto;
   width: 100%;
@@ -135,14 +114,6 @@ h2 {
 label {
   margin-left: 10px;
   color: $colorLabel;
-}
-
-.jumbotronImg {
-  & button {
-    background-color: $color1;
-    border-radius: 0%;
-    margin-top: 20px;
-  }
 }
 
 .mapa {
@@ -199,7 +170,7 @@ div {
 .fa-location-dot {
   font-size: 30px;
 }
-
+@import "_Jumbotron.scss";
 @keyframes logoAnim {
   25% {
     rotate: 10deg;

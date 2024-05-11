@@ -1,0 +1,24 @@
+.jumbotron {
+    min-height: 680px;
+    background-position: center;
+  
+    & h1 {
+      font-size: 80px;
+    }
+  
+    & p {
+      font-size: 40px;
+      text-shadow: 0 0 5px $color3;
+    }
+  }
+  .jumbotronImg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1200px;
+    & button {
+      background-color: $color1;
+      border-radius: 0%;
+      margin-top: 20px;
+    }
+  }
