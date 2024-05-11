@@ -1,0 +1,4 @@
+1- Se inserta a cada html las etiquetas meta description y keywords
+2- Se mejoran los titulos del sitio web
+3- Se corrigen los titulos en html para que no se saltee el orden 1,2,3.. y en caso necesario se arregla el css para que no nos rompa el disño
+4- se agregan a todas las fotos un texto alternativo
