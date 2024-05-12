@@ -16,20 +16,14 @@ body {
   animation-duration: 2.5s;
 }
 
-.nav-link:hover {
-  color: white;
-}
-
-a {
+a, .nav-link:hover {
   color: white;
   text-decoration: none;
 }
-
-a:hover {
+a:hover, .nav-link:hover {
   text-shadow: 0 0 10px white;
 }
-
-a:visited {
+a:visited, .nav-link:visited:hover {
   color: white;
   text-decoration: none;
 }
@@ -70,6 +64,13 @@ h2 {
   width: 100%;
 }
 
+.video {
+  height: 120vh;
+  top: 0px;
+  position: fixed;
+  z-index: -2;
+}
+
 .fondo1 {
   background-image: url(../assets/images/Party1.jpg);
   height: 1200px;
@@ -79,14 +80,12 @@ h2 {
   background-image: url(../assets/images/Party2.jpg);
 }
 
-.formulario {
+.formulario, .formulario2 {
   padding-top: 10vh;
   padding-left: 20%;
 }
 
 .formulario2 {
-  padding-top: 10vh;
-  padding-left: 20%;
   text-shadow: 0px 0px 10px black;
 }
 
@@ -129,13 +128,6 @@ div h1 {
 }
 div p {
   font-size: 20px;
-}
-
-.video {
-  height: 120vh;
-  top: 0px;
-  position: fixed;
-  z-index: -2;
 }
 
 .d-block {

@@ -1,6 +1,7 @@
 $color1: red;
 $color2: white;
 $color3: black;
+$color4:#00000093;
 $colorLabel: gray;
 $imagen1: url(../assets/images/Party1.jpg);
 $imagen2: url(../assets/images/Party2.jpg);
@@ -11,7 +12,6 @@ $degradado1:radial-gradient(
   rgba(15, 15, 15, 1) 58%,
   rgba(0, 0, 0, 1) 100%
 );
-
 
 body {
   font-family: $fuente1;
@@ -32,24 +32,21 @@ body {
   }
 }
 
-.nav-link {
-  &:hover {
-    color: $color2;
-  }
-}
-
 a {
   color: $color2;
   text-decoration: none;
+  &:hover {
+    text-shadow: 0 0 10px $color2;
+  }
+  &:visited {
+    color: $color2;
+    text-decoration: none;
+  }
 }
-
-a:hover {
-  text-shadow: 0 0 10px $color2;
-}
-
-a:visited {
-  color: $color2;
-  text-decoration: none;
+.nav-link {
+  &:hover {
+    @extend a;
+  }
 }
 
 .alert {
@@ -89,7 +86,12 @@ h2 {
   height: auto;
   width: 100%;
 }
-
+.video {
+  height: 120vh;
+  top: 0px;
+  position: fixed;
+  z-index: -2;
+}
 .fondo1 {
   background-image: $imagen1;
   height: 1200px;
@@ -106,10 +108,8 @@ h2 {
   
 }
 .formulario2 {
-  padding-top: 10vh;
-  padding-left: 20%;
+  @extend .formulario;
   text-shadow: 0px 0px 10px $color3;
-  
 }
 
 .form-floating {
@@ -138,7 +138,7 @@ label {
 }
 
 .card {
-  background-color: #00000093;
+  background-color: $color4;
   border-radius: 0%;
   color: $color2;
   max-width: 540px;
@@ -157,13 +157,6 @@ div {
   & p {
     font-size: 20px;
   }
-}
-
-.video {
-  height: 120vh;
-  top: 0px;
-  position: fixed;
-  z-index: -2;
 }
 
 .d-block {
