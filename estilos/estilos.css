@@ -79,6 +79,7 @@ h2 {
 
 .fondo2 {
   background-image: url(../assets/images/Party2.jpg);
+  height: 1100px;
 }
 
 .formulario, .formulario2 {
@@ -153,7 +154,7 @@ div p {
 }
 
 .jumbotron {
-  min-height: 680px;
+  min-height: 768px;
   background-position: center;
 }
 .jumbotron h1 {
