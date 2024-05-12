@@ -12,7 +12,13 @@ $degradado1:radial-gradient(
   rgba(15, 15, 15, 1) 58%,
   rgba(0, 0, 0, 1) 100%
 );
-
+@mixin mixin1($bgColorMixin, $ceroPix, $colorMixin, $cardMaxAncho, $transicion){
+  background-color: $bgColorMixin;
+  border-radius: $ceroPix;
+  color: $colorMixin;
+  max-width: $cardMaxAncho;
+  transition: $transicion;
+}
 body {
   font-family: $fuente1;
   font-optical-sizing: auto;
@@ -24,6 +30,7 @@ body {
 .logo {
   font-size: 4em;
   padding-left: 20px;
+  transition: 1s;
 
   &:hover {
     animation-name: logoAnim;
@@ -75,7 +82,6 @@ h2 {
   font-size: 15px;
 }
 
-
 .presentacion {
   text-align: center;
   padding-top: 20vh;
@@ -105,7 +111,7 @@ h2 {
 .formulario {
   padding-top: 10vh;
   padding-left: 20%;
-  
+  transform: scale(1.1);
 }
 .formulario2 {
   @extend .formulario;
@@ -138,12 +144,7 @@ label {
 }
 
 .card {
-  background-color: $color4;
-  border-radius: 0%;
-  color: $color2;
-  max-width: 540px;
-  transition: 0.5s;
-
+  @include mixin1($color4, 0%, $color2, 540px, 0.5s);
   &:hover {
     transform: scale(1.1);
   }

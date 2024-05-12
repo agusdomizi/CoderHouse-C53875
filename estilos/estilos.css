@@ -9,6 +9,7 @@ body {
 .logo {
   font-size: 4em;
   padding-left: 20px;
+  transition: 1s;
 }
 .logo:hover {
   animation-name: logoAnim;
@@ -83,6 +84,7 @@ h2 {
 .formulario, .formulario2 {
   padding-top: 10vh;
   padding-left: 20%;
+  transform: scale(1.1);
 }
 
 .formulario2 {
