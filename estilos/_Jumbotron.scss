@@ -3,7 +3,7 @@
     background-position: center;
   
     & h1 {
-      font-size: 80px;
+      font-size: 76px;
     }
   
     & p {
@@ -22,3 +22,21 @@
       margin-top: 20px;
     }
   }
+@media (max-width: 344px) {
+.jumbotronImg{
+  min-height: 900px;
+  padding: 0%!important;
+  
+}
+.p-5{padding: 15%!important;}
+
+}
+@media (max-width: 1024px) {
+  .jumbotron{height: 800px;}
+}
+@media (max-width: 1280px) {
+  .jumbotron{height: 700px;}
+}
+@media (max-width: 1920px) {
+  .jumbotron{height: 800px;}
+}
