@@ -66,7 +66,7 @@ h2 {
 }
 
 .video {
-  height: 120vh;
+  height: 110vh;
   top: 0px;
   position: fixed;
   z-index: -2;
@@ -151,7 +151,7 @@ div p {
 }
 
 .jumbotron {
-  min-height: 768px;
+  min-height: 82vh;
   background-position: center;
 }
 .jumbotron h1 {
@@ -182,21 +182,23 @@ div p {
     padding: 15% !important;
   }
 }
-@media (max-width: 1024px) {
-  .jumbotron {
-    height: 800px;
-  }
+/*
+@media (max-width: 1920px) {
+  .jumbotron{height: 800px;}
 }
 @media (max-width: 1280px) {
-  .jumbotron {
-    height: 700px;
-  }
+  .jumbotron{height: 700px;}
 }
-@media (max-width: 1920px) {
-  .jumbotron {
-    height: 800px;
-  }
+
+@media (max-width: 1024px) {
+  .jumbotron{height: 800px;}
 }
+
+
+@media (max-width: 820px) and (max-height:1180px){
+  .jumbotron{height: 874px;}
+}
+*/
 @keyframes logoAnim {
   25% {
     rotate: 10deg;

@@ -93,7 +93,7 @@ h2 {
   width: 100%;
 }
 .video {
-  height: 120vh;
+  height: 110vh;
   top: 0px;
   position: fixed;
   z-index: -2;
@@ -174,7 +174,9 @@ div {
 .fa-location-dot {
   font-size: 30px;
 }
+
 @import "_Jumbotron.scss";
+
 @keyframes logoAnim {
   25% {
     rotate: 10deg;
@@ -235,7 +237,11 @@ div {
 }
 @media (max-width: 1024px) {
   .fondo2{height: 800px;}
+  
+
 }
 @media (max-width: 1280px) {
   .fondo2{height: 700px;}
+
+
 }
